@@ -1,48 +1,30 @@
-# Astro Starter Kit: Basics
+# Astro Starter
 
-```sh
-npm create astro@latest -- --template basics
-```
+Another starter I made for my projects! Why do I need another? Well so far I've made
+two including this one. 
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+- Vite, Daisy, React, React-Router-Dom
+and this one
+- Astro, Daisy React
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+So they're pretty similar, the primary difference being Astro vs Vite. Why do 
+I need both and when would I use one over the other? 
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+Excellent questions. In short, Vite is more fit for Apps, and Astro is more 
+fit for static content with occasional hydration (SSG type stuff). 
 
-## 🚀 Project Structure
+Vite needs some nginx config, then relies on react-router to handle page routing, 
+and I can easily implement some complex logic when it comes to app routing,
+and I love the DX of Vite for bundling. The downside is, it's a SPA so 
+some curl based crawling / indexing wont work super well for SEO. Also, it's a bit 
+heavier, which usually isn't a problem, but for ultra-lightweight hosting there 
+are some drawbacks. 
 
-Inside of your Astro project, you'll see the following folders and files:
+Astro is awesome. It has SSR or SSG functionality, but I usually use it as a SSG. 
+It lets me add in React sparingly as needed, but still have jsx for building my 
+static content. It has scoped css, and components by default. I threw Daisy into 
+this one for some added css framework stuff, and it all builds to basic html 
+css that requires no extra nginx config to host. My bundle size gets tiny tiny.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Just another tool for another job, and this is where I'd usually start when it comes
+to using Astro as a starter template. 
