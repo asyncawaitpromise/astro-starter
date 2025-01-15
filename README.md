@@ -1,5 +1,12 @@
 # Astro Starter
 
+To use,
+
+- clone repo
+- git remote remove origin
+- pnpm i
+- astro host
+
 Another starter I made for my projects! Why do I need another? Well so far I've made
 two including this one. 
 
