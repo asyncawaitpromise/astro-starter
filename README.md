@@ -2,10 +2,10 @@
 
 To use,
 
-- clone repo
+- git clone https://github.com/asyncawaitpromise/astro-starter.git .
 - git remote remove origin
 - pnpm i
-- astro host
+- pnpm host
 
 Another starter I made for my projects! Why do I need another? Well so far I've made
 two including this one. 
@@ -35,3 +35,11 @@ css that requires no extra nginx config to host. My bundle size gets tiny tiny.
 
 Just another tool for another job, and this is where I'd usually start when it comes
 to using Astro as a starter template. 
+
+
+To use,
+
+- git clone https://github.com/asyncawaitpromise/astro-starter.git .
+- git remote remove origin
+- pnpm i
+- pnpm host
